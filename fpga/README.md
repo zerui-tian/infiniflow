@@ -1,0 +1,1 @@
+The Verilog source code for the InfiniFlow prototype will be open-sourced upon acceptance.
