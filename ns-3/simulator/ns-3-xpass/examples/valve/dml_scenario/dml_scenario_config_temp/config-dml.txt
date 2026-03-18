@@ -1,0 +1,29 @@
+//simulator settings
+SIMULATOR_STOP_TIME 10
+
+//simulation settings
+BUFFER_SIZE 16
+PACKET_PAYLOAD_SIZE 1500
+PAUSE_TIME 5
+SHAPING_PKT_SIZE 1450
+
+ALPHA 0.25
+KP_NIC 50
+KP_LC_I 50
+KP_LC_E 50
+
+MAX_CREDIT_RATE 3500000000
+ALPHA_ 0.5
+MAX_JITTER_ 0.1
+MIN_JITTER_ -0.1
+TARGET_LOSS_SCALING_ 0.1
+W_INIT_ 0.0625
+MIN_W_ 0.01
+
+MAX_TOKENS  136
+TOKEN_REFRESH_RATE_ 3500000000
+
+TOPOLOGY_FILE /home/pnic/valve-ns3/simulator/ns-3.39/examples/valve/dml_scenario/dml_scenario_topology.txt
+FLOW_FILE /home/pnic/valve-ns3/simulator/ns-3.39/examples/valve/dml_scenario/dml_scenario_flow_config/resnet50/iteration_488.txt
+FCT_OUTPUT_FILE /home/pnic/valve-ns3/simulator/ns-3.39/examples/valve/dml_scenario/monitor_output/resnet50/fct_488.txt
+PFC_OUTPUT_FILE /home/pnic/valve-ns3/simulator/ns-3.39/examples/valve/dml_scenario/monitor_output/resnet50/pfc_488.txt

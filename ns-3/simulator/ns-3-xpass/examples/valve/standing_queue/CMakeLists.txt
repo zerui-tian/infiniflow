@@ -1,0 +1,15 @@
+build_example(
+  NAME standing_queue
+  SOURCE_FILES 
+    standing_queue.cc
+    cdf.c
+  HEADER_FILES
+    cdf.h
+  LIBRARIES_TO_LINK
+    ${libpoint-to-point}
+    ${libtraffic-control}
+    ${libinternet}
+    ${libapplications}
+)
+
+set_source_files_properties(cdf.c PROPERTIES SKIP_PRECOMPILE_HEADERS ON)

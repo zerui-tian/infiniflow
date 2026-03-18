@@ -1,0 +1,13 @@
+//simulator settings
+SIMULATOR_STOP_TIME 10
+
+//simulation settings
+BUFFER_SIZE 16
+PACKET_PAYLOAD_SIZE 1500
+PAUSE_TIME 5
+SHAPING_PKT_SIZE 1500
+
+TOPOLOGY_FILE /home/pnic/valve-ns3/simulator/ns-3.39/examples/valve/dml_scenario/dml_scenario_topology.txt
+FLOW_FILE /home/pnic/valve-ns3/simulator/ns-3.39/examples/valve/dml_scenario/dml_scenario_flow_config/vgg16/iteration_3.txt
+FCT_OUTPUT_FILE /home/pnic/valve-ns3/simulator/ns-3.39/examples/valve/dml_scenario/monitor_output/vgg16/fct_3.txt
+PFC_OUTPUT_FILE /home/pnic/valve-ns3/simulator/ns-3.39/examples/valve/dml_scenario/monitor_output/vgg16/pfc_3.txt

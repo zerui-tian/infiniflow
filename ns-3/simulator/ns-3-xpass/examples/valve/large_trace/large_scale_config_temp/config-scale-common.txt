@@ -1,0 +1,9 @@
+//simulator settings
+SIMULATOR_STOP_TIME 100
+
+//simulation settings
+BUFFER_SIZE 16
+PACKET_PAYLOAD_SIZE 1500
+PAUSE_TIME 5
+
+TOPOLOGY_FILE /home/pnic/valve-ns3-lcube/simulator/ns-3.39/examples/valve/large_scale/large_scale_topology.txt

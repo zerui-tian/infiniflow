@@ -1,0 +1,41 @@
+//simulator settings
+SIMULATOR_STOP_TIME 10
+
+//simulation settings
+BUFFER_SIZE 16
+PACKET_PAYLOAD_SIZE 1500
+PAUSE_TIME 5
+SHAPING_PKT_SIZE 1450
+
+ALPHA 0.25
+KP_NIC 50
+KP_LC_I 50
+KP_LC_E 50
+
+//input files
+FLOW_FILE examples/valve/simple-incast/simple-incast_flow.txt
+TOPOLOGY_FILE examples/valve/simple-incast/simple-incast_topology.txt
+
+//output files
+FCT_OUTPUT_FILE examples/valve/simple-incast/monitor_output/fct.txt
+PFC_OUTPUT_FILE examples/valve/simple-incast/monitor_output/pfc.txt
+
+//monitor settings
+QLEN_DUMP_INTERVAL 100000
+QLEN_MON_INTERVAL 1000
+QLEN_MON_START 1000000
+QLEN_MON_END 9000000
+QLEN_MON_FILE examples/valve/simple-incast/monitor_output/qlen.txt
+QLEN_DIST_MON_FILE examples/valve/simple-incast/monitor_output/qlen_dist.txt
+
+THROUGHPUT_DUMP_INTERVAL 10000000
+THROUGHPUT_MON_INTERVAL 100000
+THROUGHPUT_MON_START 0
+THROUGHPUT_MON_END 90000000
+THROUGHPUT_MON_FILE examples/valve/simple-incast/monitor_output/throughput.txt
+
+FLOWRATE_DUMP_INTERVAL 1000000
+FLOWRATE_MON_INTERVAL 200000
+FLOWRATE_MON_START 0
+FLOWRATE_MON_END 90000000
+FLOWRATE_MON_FILE examples/valve/simple-incast/monitor_output/sending_rate.txt

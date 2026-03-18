@@ -1,0 +1,45 @@
+//simulator settings
+SIMULATOR_STOP_TIME 1000
+
+//simulation settings
+BUFFER_SIZE 16
+PACKET_PAYLOAD_SIZE 1500
+PAUSE_TIME 7
+
+ALPHA 0.25
+KP_NIC 50
+KP_LC_I 50
+KP_LC_E 50
+
+MAX_CREDIT_RATE 50000000000
+ALPHA_ 0.6
+MAX_JITTER_ 0.08
+MIN_JITTER_ 0.01
+TARGET_LOSS_SCALING_ 0.1
+W_INIT_ 0.5
+MIN_W_ 0.01
+
+MAX_TOKENS  680
+TOKEN_REFRESH_RATE_ 1500000000
+
+
+//input files
+FLOW_FILE examples/valve/first_pingpong/first_pingpong_flow.txt
+TOPOLOGY_FILE examples/valve/first_pingpong/first_pingpong_topology.txt
+
+//output files
+FCT_OUTPUT_FILE examples/valve/first_pingpong/output/fct.txt
+PFC_OUTPUT_FILE examples/valve/first_pingpong/output/pfc.txt
+
+//moniter rate
+FLOWRATE_DUMP_INTERVAL 100000
+FLOWRATE_MON_INTERVAL 50000
+FLOWRATE_MON_START 0
+FLOWRATE_MON_END 40000000
+FLOWRATE_MON_FILE examples/valve/first_pingpong/output/sending_rate.txt
+
+THROUGHPUT_DUMP_INTERVAL 100000
+THROUGHPUT_MON_INTERVAL 50000
+THROUGHPUT_MON_START 0
+THROUGHPUT_MON_END 40000000
+THROUGHPUT_MON_FILE examples/valve/first_pingpong/output/throughput1d5.txt

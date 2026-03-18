@@ -1,0 +1,41 @@
+[0/2] Re-checking globbed directories...
+ninja: no work to do.
+/home/pnic/valve-ns3/simulator/ns-3.39/examples/valve/config.txt
+SIMULATOR_STOP_TIME		10
+BUFFER_SIZE				16
+PACKET_PAYLOAD_SIZE		1500
+PAUSE_TIME			5
+SHAPING_PKT_SIZE			1450
+MAX_CREDIT_RATE				1810000000
+ALPHA_					0.5
+MAX_JITTER_				0.1
+MIN_JITTER_				-0.1
+TARGET_LOSS_SCALING_			0.1
+W_INIT_					0.0625
+MIN_W_					0.01
+MAX_TOKENS				136
+TOKEN_REFRESH_RATE_			1810000000
+FLOW_FILE			examples/valve/standing_queue/fairness_flow.txt
+TOPOLOGY_FILE			examples/valve/standing_queue/fairness_topology.txt
+FCT_OUTPUT_FILE			examples/valve/standing_queue/monitor_output/fct.txt
+PFC_OUTPUT_FILE			examples/valve/standing_queue/monitor_output/pfc.txt
+QLEN_DUMP_INTERVAL		100000
+QLEN_MON_INTERVAL		1000
+QLEN_MON_START				1000000
+QLEN_MON_END				90000000
+QLEN_MON_FILE				examples/valve/standing_queue/monitor_output/qlen.txt
+QLEN_DIST_MON_FILE				examples/valve/standing_queue/monitor_output/qlen_dist.txt
+THROUGHPUT_DUMP_INTERVAL		100000
+THROUGHPUT_MON_INTERVAL		1000
+THROUGHPUT_MON_START				1000000
+THROUGHPUT_MON_END				90000000
+THROUGHPUT_MON_FILE				examples/valve/standing_queue/monitor_output/throughput.txt
+FLOWRATE_DUMP_INTERVAL		100000
+FLOWRATE_MON_INTERVAL		1000
+FLOWRATE_MON_START				1000000
+FLOWRATE_MON_END				90000000
+FLOWRATE_MON_FILE				examples/valve/standing_queue/monitor_output/sending_rate.txt
+maxRtt=30900 maxBdp=154500 minRtt=20600
+Simulation is running...
+Simulation is done!
+Simulation Time: 0:0:6.562

@@ -1,0 +1,49 @@
+//simulator settings
+SIMULATOR_STOP_TIME 1
+
+//simulation settings
+BUFFER_SIZE 16
+PACKET_PAYLOAD_SIZE 1500
+PAUSE_TIME 5
+SHAPING_PKT_SIZE 1450
+
+
+MAX_CREDIT_RATE 1813333333
+ALPHA_ 0.5
+MAX_JITTER_ 0.1
+MIN_JITTER_ -0.1
+TARGET_LOSS_SCALING_ 0.1
+//初始0.0625
+W_INIT_ 0.0625
+MIN_W_ 0.01
+
+MAX_TOKENS  136
+TOKEN_REFRESH_RATE_ 1813333333
+
+//input files
+FLOW_FILE examples/valve/fairness_evaluation/flow.txt
+TOPOLOGY_FILE examples/valve/fairness_evaluation/topology.txt
+
+//output files
+FCT_OUTPUT_FILE examples/valve/fairness_evaluation/monitor_output/fct.txt
+PFC_OUTPUT_FILE examples/valve/fairness_evaluation/monitor_output/pfc.txt
+
+//monitor settings
+QLEN_DUMP_INTERVAL 500000
+QLEN_MON_INTERVAL 10000
+QLEN_MON_START 0
+QLEN_MON_END 90000000
+QLEN_MON_FILE examples/valve/fairness_evaluation/monitor_output/qlen.txt
+QLEN_DIST_MON_FILE examples/valve/fairness_evaluation/monitor_output/qlen_dist.txt
+
+THROUGHPUT_DUMP_INTERVAL 500000
+THROUGHPUT_MON_INTERVAL 10000
+THROUGHPUT_MON_START 0
+THROUGHPUT_MON_END 90000000
+THROUGHPUT_MON_FILE examples/valve/fairness_evaluation/monitor_output/throughput.txt
+
+FLOWRATE_DUMP_INTERVAL 1000000
+FLOWRATE_MON_INTERVAL 200000
+FLOWRATE_MON_START 0
+FLOWRATE_MON_END 90000000
+FLOWRATE_MON_FILE examples/valve/fairness_evaluation/monitor_output/sending_rate_spine_16.txt

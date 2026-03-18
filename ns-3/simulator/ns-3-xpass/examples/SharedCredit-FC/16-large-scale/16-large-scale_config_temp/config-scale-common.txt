@@ -1,0 +1,27 @@
+//simulator settings
+SIMULATOR_STOP_TIME 1
+
+//simulation settings
+BUFFER_SIZE 40
+PACKET_PAYLOAD_SIZE 1000
+PAUSE_TIME 5
+SHAPING_PKT_SIZE 950
+
+MAX_CREDIT_RATE 6480000000
+ALPHA_ 0.5
+MAX_JITTER_ 0.1
+MIN_JITTER_ -0.1
+TARGET_LOSS_SCALING_ 0.1
+
+W_INIT_ 0.0625
+MIN_W_ 0.01
+
+MAX_TOKENS  136
+TOKEN_REFRESH_RATE_ 6480000000
+
+TOPOLOGY_FILE examples/SharedCredit-FC/16-large-scale/16-large-scale_topology.txt
+TRACE_FILE examples/SharedCredit-FC/16-large-scale/monitor_output/trace.txt
+TRACE_OUTPUT_FILE examples/SharedCredit-FC/16-large-scale/monitor_output/mix.tr
+PFC_OUTPUT_FILE examples/SharedCredit-FC/16-large-scale/monitor_output/pfc.txt
+
+

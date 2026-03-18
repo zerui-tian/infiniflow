@@ -1,0 +1,52 @@
+//simulator settings
+SIMULATOR_STOP_TIME 10000
+
+//simulation settings
+BUFFER_SIZE 16
+PACKET_PAYLOAD_SIZE 1500
+PAUSE_TIME 5
+SHAPING_PKT_SIZE 1450
+
+ALPHA 0.25
+KP_NIC 50
+KP_LC_I 50
+KP_LC_E 50
+
+MAX_CREDIT_RATE 2300000000
+ALPHA_ 0.5
+MAX_JITTER_ 0.1
+MIN_JITTER_ -0.1
+TARGET_LOSS_SCALING_ 0.125
+W_INIT_ 0.0625
+MIN_W_ 0.01
+
+MAX_TOKENS  136
+TOKEN_REFRESH_RATE_ 2300000000
+
+//input files
+FLOW_FILE examples/valve/large_trace/flow/websearch_load30.txt
+TOPOLOGY_FILE examples/valve/large_trace/large_trace_topology.txt
+
+//output files
+FCT_OUTPUT_FILE examples/valve/large_trace/monitor_output/test_fct.txt
+PFC_OUTPUT_FILE examples/valve/large_trace/monitor_output/test_pfc.txt
+
+//monitor settings
+QLEN_DUMP_INTERVAL 50000
+QLEN_MON_INTERVAL 1000
+QLEN_MON_START 1000000
+QLEN_MON_END 20000000
+QLEN_MON_FILE examples/valve/large_trace/monitor_output/qlen.txt
+QLEN_DIST_MON_FILE examples/valve/large_trace/monitor_output/qlen_dist.txt
+
+THROUGHPUT_DUMP_INTERVAL 10000000
+THROUGHPUT_MON_INTERVAL 100000
+THROUGHPUT_MON_START 0
+THROUGHPUT_MON_END 90000000
+THROUGHPUT_MON_FILE examples/valve/large_trace/monitor_output/throughput.txt
+
+FLOWRATE_DUMP_INTERVAL 1000000
+FLOWRATE_MON_INTERVAL 200000
+FLOWRATE_MON_START 0
+FLOWRATE_MON_END 90000000
+FLOWRATE_MON_FILE examples/valve/large_trace/monitor_output/sending_rate.txt

@@ -1,0 +1,5 @@
+add_subdirectory(14-evaluation)
+add_subdirectory(15-evaluation)
+add_subdirectory(16-large-scale)
+add_subdirectory(19-validating-prototype)
+add_subdirectory(ablation-study)
