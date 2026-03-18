@@ -1,12 +1,11 @@
 # InfiniFlow: ns-3 Simulation Code
 
 This repository contains the ns-3 simulation implementation used to
-evaluate **InfiniFlow**, our proposed credit allocation framework for
-AI cluster networks.
+evaluate **InfiniFlow**.
 
 The codebase is organized under the `ns-3/simulator/` directory.
 Each subdirectory contains an independent ns-3 instance configured
-to evaluate a specific congestion control or flow control mechanism.
+to evaluate specific congestion control or flow control mechanisms.
 
 The general naming format is ns-3-xxx, 
 where `xxx` indicates the protocol or algorithm being evaluated.
@@ -29,7 +28,7 @@ The following implementations are included in the artifact.
 - **ns-3-dt**
 
   Implementation using the **Dynamic Threshold (DT)** buffer management
-  and flow control mechanism.
+  and credit-based flow control mechanism.
 
 - **ns-3-infiniband**
 
@@ -46,6 +45,10 @@ The following implementations are included in the artifact.
 - **ns-3-xpass**
 
   Implementation of the **ExpressPass** congestion control protocol.
+
+- **ns-3-bfc**
+
+  Implementation of the **BFC** in NSDI 2022.
 
 ### Ablation Study Variants
 
@@ -70,6 +73,17 @@ ablation-study implementations:
 These variants correspond to the ablation experiments presented
 in the paper and allow reproducing the comparison between partial
 and full InfiniFlow designs.
+
+### Others for Future Work
+
+- **ns-3-infiniflow-dynamic-vc**
+
+  Implementation of our **InfiniFlow** with dynamic VC allocation.
+
+- **ns-3-infiniflow-srpt**
+
+  Implementation of **InfiniFlow**, the proposed design in our paper.
+  The scheduling policy follows **Shortest Romaining Process Time (SRPT)**.
 
 ---
 
@@ -108,7 +122,7 @@ several directories used for experiment execution and result analysis.
 
 ### Software
 
-- Linux environment (tested on Ubuntu)
+- Linux environment (tested on Ubuntu, 22.04 is recommended)
 - GCC / G++ with C++17 support
 - CMake and Ninja (required by ns-3.39)
 - Python 3 (for result processing and plotting)

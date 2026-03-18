@@ -110,6 +110,6 @@ REPO_ROOT = os.path.realpath(os.path.join(SCRIPT_DIR, "../../.."))
 
 file_path = os.path.join(REPO_ROOT, "ns-3/simulator/result/fpga-data/infiniflow_utilization.xlsx")
 
-save_path = REPO_ROOT + 'ns-3/simulator/result/graph/12-evaluation-memory-consumption.png'
+save_path = REPO_ROOT + '/ns-3/simulator/result/graph/12-evaluation-memory-consumption.png'
 
 plot_bram_log_with_slanted_arrow(file_path, save_path)

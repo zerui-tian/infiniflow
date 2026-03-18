@@ -137,6 +137,6 @@ REPO_ROOT = os.path.realpath(os.path.join(SCRIPT_DIR, "../../.."))
 
 file_path = os.path.join(REPO_ROOT, "ns-3/simulator/result/fpga-data/infiniflow_utilization.xlsx")
 
-save_path = REPO_ROOT + 'ns-3/simulator/result/graph/11-evaluation-buffer-requirement.png'
+save_path = REPO_ROOT + '/ns-3/simulator/result/graph/11-evaluation-buffer-requirement.png'
 
 plot_bram_cbfc_pfc(file_path, save_path)

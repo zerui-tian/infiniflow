@@ -64,5 +64,5 @@ SCRIPT_DIR = os.path.dirname(os.path.realpath(__file__))
 
 REPO_ROOT = os.path.realpath(os.path.join(SCRIPT_DIR, "../../.."))
 
-save_path = REPO_ROOT + 'ns-3/simulator/result/graph/11-evaluation-maximum_frequency.png'
+save_path = REPO_ROOT + '/ns-3/simulator/result/graph/11-evaluation-maximum_frequency.png'
 plot_top_frequency(save_path)

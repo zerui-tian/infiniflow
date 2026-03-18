@@ -101,6 +101,6 @@ REPO_ROOT = os.path.realpath(os.path.join(SCRIPT_DIR, "../../.."))
 
 file_path = os.path.join(REPO_ROOT, "ns-3/simulator/result/fpga-data/infiniflow_utilization.xlsx")
 
-save_path = REPO_ROOT + 'ns-3/simulator/result/graph/11-evaluation-logic-utilization.png'
+save_path = REPO_ROOT + '/ns-3/simulator/result/graph/11-evaluation-logic-utilization.png'
 
 plot_fpga_logic_only(file_path, save_path)
