@@ -122,7 +122,7 @@ several directories used for experiment execution and result analysis.
 
 ### Software
 
-- Linux environment (tested on Ubuntu, 22.04 is recommended)
+- Linux environment (Ubuntu 22.04 is recommended)
 - GCC / G++ with C++17 support
 - CMake and Ninja (required by ns-3.39)
 - Python 3 (for result processing and plotting)
