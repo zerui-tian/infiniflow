@@ -34,6 +34,7 @@ for dir in "${NS3_DIRS[@]}"; do
 
     if [ -f "./waf" ]; then
         echo "▶️ Running ./waf..."
+        ./waf configure
         ./waf
     else
         echo "⚠️  ./waf not found"

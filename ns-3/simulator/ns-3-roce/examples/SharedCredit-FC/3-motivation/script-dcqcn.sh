@@ -23,6 +23,7 @@ HEADER_FILE="$NS3/src/point-to-point/model/global-config.h"
 TRACE_NAME="W4_load160-sigma2"
 PCNT=64
 FCNT=1025
+mkdir -p "$output_dir"
 mkdir -p "$OUTPUT/3-motivation"
 
 ############################################

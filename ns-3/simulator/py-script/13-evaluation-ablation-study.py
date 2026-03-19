@@ -12,13 +12,13 @@ output_dir = os.path.join(REPO_ROOT, "ns-3/simulator/result/graph")
 os.makedirs(output_dir, exist_ok=True)
 
 data_dirs = [
-    (REPO_ROOT + "ns-3/simulator/result/data/13-evaluation-ablation-study",
+    (REPO_ROOT + "/ns-3/simulator/result/data/13-evaluation-ablation-study",
      "sendingrate_infiniflow.txt",
      "InfiniFlow"),
-    (REPO_ROOT + "ns-3/simulator/result/data/13-evaluation-ablation-study",
+    (REPO_ROOT + "/ns-3/simulator/result/data/13-evaluation-ablation-study",
      "sendingrate_notap.txt",
      "w/o Locking"),
-    (REPO_ROOT + "ns-3/simulator/result/data/13-evaluation-ablation-study",
+    (REPO_ROOT + "/ns-3/simulator/result/data/13-evaluation-ablation-study",
      "sendingrate_nothreshold.txt",
      "w/o BUCP"),
 ]
