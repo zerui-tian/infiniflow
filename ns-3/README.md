@@ -83,7 +83,7 @@ and full InfiniFlow designs.
 - **ns-3-infiniflow-srpt**
 
   Implementation of **InfiniFlow**, the proposed design in our paper.
-  The scheduling policy follows **Shortest Romaining Process Time (SRPT)**.
+  The scheduling policy follows **Shortest Remaining Process Time (SRPT)**.
 
 ---
 
