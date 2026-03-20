@@ -25,7 +25,7 @@ HEADER_FILE="$NS3/src/point-to-point/model/global-config.h"
 # Traces (load changes)
 ############################################
 TRACE_LIST=(
-    # "W4_load40"
+    "W4_load40"
     "W4_load80"
 )
 
@@ -64,7 +64,7 @@ for TRACE_NAME in "${TRACE_LIST[@]}"; do
     sed -i "s/#define Q_CNT [0-9]*/#define Q_CNT $VC_CNT/" "$HEADER_FILE"
     sed -i "s/#define F_CNT [0-9]*/#define F_CNT $FCNT/" "$HEADER_FILE"
     sed -i "s/#define P_CNT [0-9]*/#define P_CNT $PCNT/" "$HEADER_FILE"
-    sed -i "s/#define OUTPUT [0-9]*/#define OUTPUT 0/" "$HEADER_FILE"
+    sed -i "s/#define OUTPUT_1 [0-9]*/#define OUTPUT_1 0/" "$HEADER_FILE"
     ./waf || { echo "Compilation failed"; exit 1; }
 
     ############################################

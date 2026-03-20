@@ -48,23 +48,23 @@ BASE_PATH="$BASE_SIMULATION_ROOT/ns-3/simulator"
 # Execute single-script projects
 # ============================================================
 
-# for project in "${SINGLE_SCRIPT_PROJECTS[@]}"; do
-#     SCRIPT_PATH="$BASE_PATH/$project/examples/SharedCredit-FC/16-large-scale/script-scale.sh"
+for project in "${SINGLE_SCRIPT_PROJECTS[@]}"; do
+    SCRIPT_PATH="$BASE_PATH/$project/examples/SharedCredit-FC/16-large-scale/script-scale.sh"
 
-#     echo "▶️ Running SharedCredit-FC 16-large-scale script for project: $project"
-#     echo "   Script path: $SCRIPT_PATH"
+    echo "▶️ Running SharedCredit-FC 16-large-scale script for project: $project"
+    echo "   Script path: $SCRIPT_PATH"
 
-#     if [ -f "$SCRIPT_PATH" ]; then
-#         chmod +x "$SCRIPT_PATH" 2>/dev/null || true  # Ensure executable (ignore errors)
-#         "$SCRIPT_PATH"
-#     else
-#         echo "❌ Script not found: $SCRIPT_PATH"
-#         exit 1
-#     fi
+    if [ -f "$SCRIPT_PATH" ]; then
+        chmod +x "$SCRIPT_PATH" 2>/dev/null || true  # Ensure executable (ignore errors)
+        "$SCRIPT_PATH"
+    else
+        echo "❌ Script not found: $SCRIPT_PATH"
+        exit 1
+    fi
 
-#     echo "✅ Completed: $project"
-#     echo "------------------------------------------------------------"
-# done
+    echo "✅ Completed: $project"
+    echo "------------------------------------------------------------"
+done
 
 # ============================================================
 # Execute multi-script project (RoCE)

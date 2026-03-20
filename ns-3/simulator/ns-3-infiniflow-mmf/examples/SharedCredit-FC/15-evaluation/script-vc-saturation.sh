@@ -41,7 +41,7 @@ VC_CNT_LIST=(8 16 32 64 128 256 512 1024 2048 4096 8192)
 cd "$NS3" || exit 1
 sed -i "s/#define F_CNT [0-9]*/#define F_CNT $FCNT/" "$HEADER_FILE"
 sed -i "s/#define P_CNT [0-9]*/#define P_CNT $PCNT/" "$HEADER_FILE"
-sed -i "s/#define OUTPUT [0-9]*/#define OUTPUT 0/" "$HEADER_FILE"
+sed -i "s/#define OUTPUT_1 [0-9]*/#define OUTPUT_1 0/" "$HEADER_FILE"
 
 ############################################
 # Batch run

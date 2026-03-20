@@ -29,7 +29,7 @@ METRICS = {
     ),
 }
 
-FPGA_FILE = os.path.join(REPO_ROOT, "/ns-3/simulator/result/fpga-data/FPGA_flow_control_data.csv")
+FPGA_FILE = os.path.join(REPO_ROOT, "ns-3/simulator/result/fpga-data/FPGA_flow_control_data.csv")
 df_fpga = pd.read_csv(FPGA_FILE)
 df_fpga = df_fpga[df_fpga["Time_ns"] <= X_MAX_NS]
 

@@ -31,7 +31,7 @@ mkdir -p "$OUTPUT/3-motivation"
 ############################################
 # BUFFER_SIZE_LIST=(20 50 100 200 500 1000)    
 # VC_CNT_LIST=(8 16 32 64 128 256 512 1024)  
-BUFFER_SIZE_LIST=(20 100 200 500 1000)       
+BUFFER_SIZE_LIST=(20 50 100 200 500 1000)       
 VC_CNT_LIST=(8 16 32 64 128 256 512 1024)  
 
 sed -i "s/#define F_CNT [0-9]*/#define F_CNT $FCNT/" "$HEADER_FILE"

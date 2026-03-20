@@ -190,3 +190,8 @@ using the Python scripts (`py-script/`), the reproduced figures will
 appear in:
 
 `result/graph/`
+
+## Tips
+
+- Some figures require running data processing scripts first (those with “get” in their names) to convert raw output into CSV format, and then running the plotting scripts.
+- Because different experiment scripts share the same directory, each script must be run individually; running them simultaneously may cause errors.
