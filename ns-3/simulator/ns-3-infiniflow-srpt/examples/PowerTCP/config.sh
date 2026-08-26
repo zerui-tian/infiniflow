@@ -1,1 +1,0 @@
-NS3=/home/pnic/cbfc-ns3/simulator/ns-3.39

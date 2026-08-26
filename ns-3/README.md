@@ -74,17 +74,6 @@ These variants correspond to the ablation experiments presented
 in the paper and allow reproducing the comparison between partial
 and full InfiniFlow designs.
 
-### Others for Future Work
-
-- **ns-3-infiniflow-dynamic-vc**
-
-  Implementation of our **InfiniFlow** with dynamic VC allocation.
-
-- **ns-3-infiniflow-srpt**
-
-  Implementation of **InfiniFlow**, the proposed design in our paper.
-  The scheduling policy follows **Shortest Remaining Process Time (SRPT)**.
-
 ---
 
 ### Other Directories
