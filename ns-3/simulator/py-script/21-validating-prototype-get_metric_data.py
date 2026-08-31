@@ -6,7 +6,7 @@ from collections import defaultdict
 SCRIPT_DIR = os.path.dirname(os.path.realpath(__file__))
 REPO_ROOT = os.path.realpath(os.path.join(SCRIPT_DIR, "../../.."))
 
-output_dir = os.path.join(REPO_ROOT, "ns-3/simulator/result/data/19-validating-prototype") 
+output_dir = os.path.join(REPO_ROOT, "ns-3/simulator/result/data/21-validating-prototype") 
 os.makedirs(output_dir, exist_ok=True)
 
 PKT_SIZE = 1024 
@@ -72,7 +72,7 @@ def process_log_file(file_path):
 
             print(f"   ✅ {m:<10} -> {key}.csv ({len(df)} 行)")
 
-filename = os.path.join(REPO_ROOT, "ns-3/simulator/result/data/19-validating-prototype/19-validating-prototype.out")
+filename = os.path.join(REPO_ROOT, "ns-3/simulator/result/data/21-validating-prototype/21-validating-prototype.out")
 
 process_log_file(filename)
 

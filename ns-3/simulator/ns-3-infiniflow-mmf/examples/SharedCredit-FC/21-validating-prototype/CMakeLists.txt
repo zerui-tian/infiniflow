@@ -1,7 +1,7 @@
 build_example(
-  NAME 19-validating-prototype
+  NAME 21-validating-prototype
   SOURCE_FILES 
-    19-validating-prototype.cc
+    21-validating-prototype.cc
     cdf.c
   HEADER_FILES
     cdf.h

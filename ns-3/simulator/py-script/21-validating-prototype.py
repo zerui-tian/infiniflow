@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 SCRIPT_DIR = os.path.dirname(os.path.realpath(__file__))
 REPO_ROOT = os.path.realpath(os.path.join(SCRIPT_DIR, "../../.."))
 
-BASE_DIR = os.path.join(REPO_ROOT, "ns-3/simulator/result/data/19-validating-prototype")
+BASE_DIR = os.path.join(REPO_ROOT, "ns-3/simulator/result/data/21-validating-prototype")
 NS3_DIR  = BASE_DIR 
 FIG_DIR = os.path.join(REPO_ROOT, "ns-3/simulator/result/graph")
 os.makedirs(FIG_DIR, exist_ok=True)
@@ -88,7 +88,7 @@ for title, (ns3_file, ns3_col, fpga_col) in METRICS.items():
         top=0.95
     )
 
-    out_path = os.path.join(FIG_DIR, f"19-validating-portotype-{title}.png")
+    out_path = os.path.join(FIG_DIR, f"21-validating-portotype-{title}.png")
     plt.savefig(out_path, dpi=300)
 
     plt.close()

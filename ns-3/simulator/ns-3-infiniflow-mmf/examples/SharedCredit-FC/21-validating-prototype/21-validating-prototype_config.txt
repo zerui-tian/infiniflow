@@ -3,12 +3,12 @@ USE_DYNAMIC_PFC_THRESHOLD 1
 
 PACKET_PAYLOAD_SIZE 976
 
-TOPOLOGY_FILE examples/SharedCredit-FC/19-validating-prototype/19-validating-prototype_topology.txt
-FLOW_FILE examples/SharedCredit-FC/19-validating-prototype/19-validating-prototype_flow.txt
-TRACE_FILE examples/SharedCredit-FC/19-validating-prototype/monitor_output/trace.txt
-TRACE_OUTPUT_FILE examples/SharedCredit-FC/19-validating-prototype/monitor_output/mix.tr
-FCT_OUTPUT_FILE examples/SharedCredit-FC/19-validating-prototype/monitor_output/fct.txt
-PFC_OUTPUT_FILE examples/SharedCredit-FC/19-validating-prototype/monitor_output/pfc.txt
+TOPOLOGY_FILE examples/SharedCredit-FC/21-validating-prototype/21-validating-prototype_topology.txt
+FLOW_FILE examples/SharedCredit-FC/21-validating-prototype/21-validating-prototype_flow.txt
+TRACE_FILE examples/SharedCredit-FC/21-validating-prototype/monitor_output/trace.txt
+TRACE_OUTPUT_FILE examples/SharedCredit-FC/21-validating-prototype/monitor_output/mix.tr
+FCT_OUTPUT_FILE examples/SharedCredit-FC/21-validating-prototype/monitor_output/fct.txt
+PFC_OUTPUT_FILE examples/SharedCredit-FC/21-validating-prototype/monitor_output/pfc.txt
 
 SIMULATOR_STOP_TIME 2
 

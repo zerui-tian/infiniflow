@@ -20,14 +20,14 @@ echo "📁 Auto-detected Simulation Root: $BASE_SIMULATION_ROOT"
 echo "============================================================"
 echo
 
-mkdir -p "$BASE_SIMULATION_ROOT/ns-3/simulator/result/data/19-validating-prototype"
+mkdir -p "$BASE_SIMULATION_ROOT/ns-3/simulator/result/data/21-validating-prototype"
 
 PROJECTS=(
     "ns-3-infiniflow-mmf"
 )
 
 # Relative path from each project root to the ablation study script
-SCRIPT_REL_PATH="examples/SharedCredit-FC/19-validating-prototype/script.sh"
+SCRIPT_REL_PATH="examples/SharedCredit-FC/21-validating-prototype/script.sh"
 
 # ============================================================
 # Execute each script with clear status messages
