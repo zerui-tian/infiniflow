@@ -11,6 +11,8 @@ set -e
 
 SCRIPT_PATH="$(readlink -f "$0")"
 SCRIPT_DIR="$(dirname "$SCRIPT_PATH")"
+CONFIG_FILE="$SCRIPT_DIR/../config.sh"
+source $CONFIG_FILE
 
 HEADER_FILE="$NS3/src/point-to-point/model/global-config.h"
 

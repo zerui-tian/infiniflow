@@ -53,10 +53,13 @@ QMAX 10
 KMAX_MAP 3 25000000000 400 50000000000 800 100000000000 1600
 KMIN_MAP 3 25000000000 100 50000000000 200 100000000000 400
 PMAX_MAP 3 25000000000 0.2 50000000000 0.2 100000000000 0.2
-FLOW_FILE /home/pnic/Infiniflow_sigcomm/infiniflow/ns-3/simulator/ns-3-infiniflow-mmf/examples/SharedCredit-FC/16-large-scale/flow/W4_load80.txt
-FCT_OUTPUT_FILE /home/pnic/Infiniflow_sigcomm/infiniflow/ns-3/simulator/result/data/16-large-scale/infiniflow/fct/W4_load80.txt
-QLEN_MON_FILE /home/pnic/Infiniflow_sigcomm/infiniflow/ns-3/simulator/result/data/16-large-scale/infiniflow/qlen/W4_load80.txt
-QLEN_DUMP_INTERVAL 50000
-QLEN_MON_INTERVAL 5000
+TOPOLOGY_FILE examples/SharedCredit-FC/20-parameter-sweeping/20-parameter-sweeping_topology_2us.txt
+FLOW_FILE /home/tianzr/infiniflow-ns3/infiniflow/ns-3/simulator/ns-3-infiniflow-mmf/examples/SharedCredit-FC/20-parameter-sweeping/flow/W4_load80.txt
+FCT_OUTPUT_FILE /home/tianzr/infiniflow-ns3/infiniflow/ns-3/simulator/result/data/20-parameter-sweeping/infiniflow/fct/2us/W4_load80_qmin34_qmax36.txt
+QLEN_MON_FILE /home/tianzr/infiniflow-ns3/infiniflow/ns-3/simulator/result/data/20-parameter-sweeping/infiniflow/qlen/2us/W4_load80_qmin34_qmax36.txt
+QLEN_DUMP_INTERVAL 30000
+QLEN_MON_INTERVAL 3000
 QLEN_MON_END 0
-QLEN_MON_END 5000000
+QLEN_MON_END 3000000
+QMIN 34
+QMAX 36
