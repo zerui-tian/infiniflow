@@ -184,3 +184,4 @@ appear in:
 
 - Some figures require running data processing scripts first (those with “get” in their names) to convert raw output into CSV format, and then running the plotting scripts.
 - Because different experiment scripts share the same directory, each script must be run individually; running them simultaneously may cause errors.
+- Some experiments may take a really long time to run. For example, Experiment 20 took approximately 72 hours to complete on our server.
