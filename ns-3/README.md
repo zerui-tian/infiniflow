@@ -21,7 +21,7 @@ The following implementations are included in the artifact.
 - **ns-3-infiniflow-mmf**
 
   Implementation of **InfiniFlow**, the proposed design in our paper.
-  The scheduling policy follows **Max-Min Fairness (MMF)**.
+  The scheduling policy follows Rounding Robin to achieve **Max-Min Fairness (MMF)**.
 
 ### Baseline Flow Control Mechanisms
 
@@ -86,7 +86,7 @@ several directories used for experiment execution and result analysis.
   Stores experiment outputs and generated figures.
 
   - `data/`  
-    Contains the raw **ns-3 simulation results**.
+    Contains the raw **ns-3 simulation results** and CSV files.
 
   - `fpga-data/`  
     Contains **FPGA experiment results** used for comparison with the
